@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Homepage is always called index.html!! -->
+
+<head>
+  <meta charset="utf-8">
+  <!-- metadata about the site, utf-8 is the characters that we have available, this will have an impact on what can be displayed based on the langauge that the website is meant to display. If we write it in engligh but try to display in arabic it will get all messed up. Apparently called MOJIBAKE! HOWEVER utf-8 is the standard encoding, and apparently includes all the symbols we need for any language, which is cool. It's about 'rendering' the website, using utf-8 will give it the best chance of being rendered correctly -->
+  <!-- there are lots of meta tags that can be added, including 'descripion', in which you can write a short description of the site which becomes the snippet of text displayed by a search engine! -->
+  <meta name="description" content="Max's super little website for practising!">
+  <title>Max's super site</title>
+</head>
+
+<body>
+  <!-- <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7898ea64-b98e-11e7-85ff-fb955b2fbca8.jpg?crop=909%2C909%2C109%2C16" width="150px" alt="Max profile picture">  -->
+  <!-- this image is taken from a different website - the browser pings the site, downloads the image, then displays it. so if that other site goes down it won't be able to display the image. Therefore it is also possible to put an image into our folder and refer to that in our source -->
+
+  <!-- I've used a table to organise some of the info on the site - I don't think this is the best way to do this on a modern website! Good practice though... -->
+  <table cellspacing="20">
+    <tr>
+      <td><img src="images/max-face-picture-circle.png" alt="Max profile picture" width="150px"></td>
+      <td>
+        <h1>Max BB</h1>
+        <p><i>Dude who's learning to code</i></p>
+        <!-- I've used <i> here but the course suggests <em> due to how it impacts on screen readers - I used <i> here because it's just for looks -->
+        <p>Born in <a href="https://en.wikipedia.org/wiki/1987" target="_blank">1987</a>, this guy has spent a long time <a href="https://staff.lincoln.ac.uk/93479fc0-8447-4912-8108-362d5e702044" target="_blank">reading for a living</a>. Now's he's
+          having a crack at learning to make stuff on the computer! Enjoys climbing, beer, live music. Married to the amazing Annie!</p>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <hr size="3" color="#28abb1">
+  <h3>Books and teaching</h3>
+  <ul>
+    <li>Super book</li>
+    <li>Amazing book
+      <ul>
+        <li>Very good</li>
+        <li>Also great</li>
+      </ul>
+    </li>
+  </ul>
+  <hr size="3"  color="#28abb1">
+  <h3>Work experience</h3>
+  <!-- here is a bog standard table with a header, body, and footer -->
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2014-2018</td>
+        <td>PhD candidate and Associate Lecturer, University of Lincoln</td>
+      </tr>
+      <tr>
+        <td>2017- ...</td>
+        <td>Senior Lecturer, University of Lincoln</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Left foot</td>
+        <td>Right foot</td>
+      </tr>
+    </tfoot>
+  </table>
+  <hr size="3"  color="#28abb1">
+  <h3>Skills</h3>
+  <table>
+    <tr>
+      <td>Climbing</td>
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Sexing</td>
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>⭐</td>
+    </tr>
+    <tr>
+      <td>html</td>
+      <td>⭐⭐</td>
+    </tr>
+  </table>
+
+  <hr size="3" color="#28abb1">
+  <a href="hobbies.html">My hobbies</a><br>
+  <!-- Here i have removed the hobbies section and created a new html page for them, which i've linked to with an anchor tag -->
+  <a href="contact.html">Contact me</a>
+</body>
+
+</html>
